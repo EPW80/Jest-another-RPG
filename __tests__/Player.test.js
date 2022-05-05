@@ -36,4 +36,26 @@ test('creates a player object', () => {
     expect(player.getInventory()).toEqual(false);
   });
 
+  test("gets player's health value", () => {
+    const player = new Player('Dave');
+  
+    expect(player.getHealth()).toEqual(expect.stringContaining(player.health.toString()));
+  });
+
+  Player.prototype.getHealth = function() {
+    return `${this.name}'s health is now ${this.health}!`;
+  };
+
+  test('checks if player is alive or not', () => {
+    const player = new Player('Dave');
+  
+    expect(player.isAlive()).toBeTruthy();
+  
+    player.health = 0;
+  
+    expect(player.isAlive()).toBeFalsy();
+  });
+  
+  module.exports = Player;
+
  
