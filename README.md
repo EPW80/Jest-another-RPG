@@ -5,9 +5,10 @@ A command-line role-playing game (RPG) in which a user battles against a series 
 ## Built With
 
 - JavaScript
+  
 - Node.js
-- [Inquirer Package](https://www.npmjs.com/package/inquirer)
-- [Jest Package](https://www.npmjs.com/package/jest)
+  
+- Inquirer Package
 
 ## Installation
 
@@ -15,7 +16,6 @@ To use this application, please install:
 
 ```
 npm i inquirer
-
 ```
 
 ## Tests
@@ -26,11 +26,11 @@ To run tests on the application, install
 `npm i jest`
 ```
 
-and run `npm run test` from the command line.
+Run `npm run test` from the command line.
 
 ## Usage
 
-After installing the required packages, use the command line to navigate to the root of the application and run `node app`. Follow prompts to enter player name and play the RPG.
+After installing the required packages, use the command line to navigate to the root of the application and run `node app.` Follow the prompts to enter player's name and play the RPG.
 
 ## Demo
 
